@@ -16,6 +16,11 @@
 		56A37A2625E59D0200145364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A37A2425E59D0200145364 /* LaunchScreen.storyboard */; };
 		56A37A3125E59D0300145364 /* Foreign_languages_Heads_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A37A3025E59D0300145364 /* Foreign_languages_Heads_UpTests.swift */; };
 		56A37A3C25E59D0300145364 /* Foreign_languages_Heads_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A37A3B25E59D0300145364 /* Foreign_languages_Heads_UpUITests.swift */; };
+		FA47204225E847FA00F4180E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47204125E847FA00F4180E /* ViewController2.swift */; };
+		FA47204725E8480A00F4180E /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47204625E8480A00F4180E /* ViewController3.swift */; };
+		FA47204C25E8482500F4180E /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47204B25E8482500F4180E /* ViewController4.swift */; };
+		FA47205125E8483800F4180E /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47205025E8483800F4180E /* ViewController5.swift */; };
+		FA47205625E848AA00F4180E /* ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47205525E848AA00F4180E /* ViewController6.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		56A37A3725E59D0300145364 /* Foreign-languages-Heads-UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Foreign-languages-Heads-UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A37A3B25E59D0300145364 /* Foreign_languages_Heads_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foreign_languages_Heads_UpUITests.swift; sourceTree = "<group>"; };
 		56A37A3D25E59D0300145364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA47204125E847FA00F4180E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		FA47204625E8480A00F4180E /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		FA47204B25E8482500F4180E /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		FA47205025E8483800F4180E /* ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
+		FA47205525E848AA00F4180E /* ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController6.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +114,12 @@
 				56A37A1625E59D0000145364 /* AppDelegate.swift */,
 				56A37A1825E59D0000145364 /* SceneDelegate.swift */,
 				56A37A1A25E59D0000145364 /* ViewController.swift */,
+				FA47204125E847FA00F4180E /* ViewController2.swift */,
+				FA47204625E8480A00F4180E /* ViewController3.swift */,
+				FA47204B25E8482500F4180E /* ViewController4.swift */,
+				FA47205025E8483800F4180E /* ViewController5.swift */,
 				56A37A1C25E59D0000145364 /* Main.storyboard */,
+				FA47205525E848AA00F4180E /* ViewController6.swift */,
 				56A37A2225E59D0200145364 /* Assets.xcassets */,
 				56A37A2425E59D0200145364 /* LaunchScreen.storyboard */,
 				56A37A2725E59D0200145364 /* Info.plist */,
@@ -262,8 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA47204225E847FA00F4180E /* ViewController2.swift in Sources */,
+				FA47204C25E8482500F4180E /* ViewController4.swift in Sources */,
 				56A37A1B25E59D0000145364 /* ViewController.swift in Sources */,
+				FA47204725E8480A00F4180E /* ViewController3.swift in Sources */,
+				FA47205125E8483800F4180E /* ViewController5.swift in Sources */,
 				56A37A1725E59D0000145364 /* AppDelegate.swift in Sources */,
+				FA47205625E848AA00F4180E /* ViewController6.swift in Sources */,
 				56A37A1925E59D0000145364 /* SceneDelegate.swift in Sources */,
 				56A37A2125E59D0000145364 /* Foreign_languages_Heads_Up.xcdatamodeld in Sources */,
 			);
