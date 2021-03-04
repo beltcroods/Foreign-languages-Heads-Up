@@ -65,10 +65,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBoard3" translatesAutoresizingMaskIntoConstraints="NO" id="HxA-Fw-zBr">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPV-Cs-SuY">
                                 <rect key="frame" x="495" y="113" width="254" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -77,8 +73,43 @@
                                     <segue destination="VRj-hr-Y1W" kind="show" id="ATj-Dn-Xr4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goj-pb-LGg">
+                                <rect key="frame" x="374" y="100" width="87" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5u-PW-md8">
+                                <rect key="frame" x="406" y="1023" width="23" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Passed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6K-10-Xlr">
+                                <rect key="frame" x="276" y="1029" width="122" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="d6R-ux-Shh"/>
+                                    <constraint firstAttribute="width" constant="120" id="hHo-jw-Bmx"/>
+                                    <constraint firstAttribute="height" constant="32" id="hie-q3-uos"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMW-WD-JtE">
+                                <rect key="frame" x="276" y="106" width="120" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="goj-pb-LGg" firstAttribute="top" secondItem="ZXq-UR-oqc" secondAttribute="top" constant="50" id="2W4-XI-u0M"/>
+                            <constraint firstItem="goj-pb-LGg" firstAttribute="top" secondItem="ZXq-UR-oqc" secondAttribute="top" constant="50" id="NcE-0i-e52"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZXq-UR-oqc"/>
                     </view>
                     <toolbarItems>
@@ -278,7 +309,6 @@
     </scenes>
     <resources>
         <image name="StoryBoard1" width="662" height="883"/>
-        <image name="StoryBoard3" width="663" height="893"/>
         <image name="StoryBoard4" width="657" height="878"/>
         <image name="StoryBoard5" width="662" height="889"/>
     </resources>
