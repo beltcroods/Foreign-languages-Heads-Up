@@ -10,10 +10,21 @@ import UIKit
 
 class ViewController3: UIViewController {
 
+    @IBOutlet weak var TiltDownLabel: UILabel!
+    @IBOutlet weak var TiltUpLabel: UILabel!
+    @IBOutlet weak var NumberPassedLabel: UILabel!
+    @IBOutlet weak var PassedLabel: UILabel!
+    @IBOutlet weak var CorrectLabel: UILabel!
+    @IBOutlet weak var NumberCorrectLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        TiltDownLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        TiltUpLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        NumberPassedLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        PassedLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        CorrectLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        NumberCorrectLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
     }
     
 
