@@ -15,10 +15,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var PasswordTextField: UITextField!
     
+    @IBOutlet weak var TESTUILabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        
     }
 
     @IBAction func SubmitLogin(_ sender: Any) {
@@ -26,7 +29,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Cardset1Button(_ sender: Any) {
-    
+        let cardset1 = ["soundtrack": "une bande originale"]
+        let CurrentCardNumber = Int.random(in: 1...15)
+        if CurrentCardNumber == 1 {
+            TESTUILabel.text = cardset1["soundtrack"]
+        }
     }
     
 }
