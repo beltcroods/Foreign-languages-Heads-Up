@@ -5,7 +5,7 @@
 //  Created by John Horlamus on 2/25/21.
 //  Copyright © 2021 user180891. All rights reserved.
 //
-
+import CoreMotion
 import UIKit
 
 class ViewController3: UIViewController {
@@ -16,26 +16,38 @@ class ViewController3: UIViewController {
     @IBOutlet weak var PassedLabel: UILabel!
     @IBOutlet weak var CorrectLabel: UILabel!
     @IBOutlet weak var NumberCorrectLabel: UILabel!
+    var motionManager: CMMotionManager!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
-        TiltDownLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
-        TiltUpLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
-        NumberPassedLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
-        PassedLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
-        CorrectLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
-        NumberCorrectLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        motionManager = CMMotionManager()
+        if (motionManager.isAccelerometerAvailable){
+            motionManager.startAccelerometerUpdates(
+                to: OperationQueue.current!,
+                withHandler: {(accelData: CMAccelerometerData?, errorOC: Error?) in
+                    self.outputAccelData(acceleration: accelData!.acceleration)
+            })
+        }
+       
+        if (motionManager.isGyroAvailable){
+            motionManager.startGyroUpdates(
+                to: OperationQueue.current!,
+                withHandler: { (gyroData: CMGyroData?, errorOC: Error?) in
+                    self.outputGyroData(gyro: gyroData!)
+            })
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   
+    func outputAccelData(acceleration: CMAcceleration){
+        print(acceleration.x)
+        print(acceleration.y)
+        print(acceleration.z)
     }
-    */
+   
+    func outputGyroData(gyro: CMGyroData){
+        print("Gyro rotation: \(gyro.rotationRate)")
+    }
+
 
 }

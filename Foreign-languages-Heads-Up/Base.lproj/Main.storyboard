@@ -194,7 +194,11 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="ZXq-UR-oqc"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="u78-Ae-sLr" appends="YES" id="JNk-Di-vCg"/>
+                        </connections>
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" id="xYT-kQ-gRt">
@@ -209,6 +213,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pv-iu-aCx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <gestureRecognizer id="u78-Ae-sLr"/>
             </objects>
             <point key="canvasLocation" x="-642.4460431654677" y="445.7286432160804"/>
         </scene>
@@ -387,6 +392,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGi-ih-B3c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <gestureRecognizer id="Fye-Hp-kMS"/>
             </objects>
             <point key="canvasLocation" x="-550.35971223021591" y="-209.04522613065328"/>
         </scene>
