@@ -160,16 +160,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tilt Up = Correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFf-uN-LEq">
-                                <rect key="frame" x="20" y="583" width="151" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe Left = Correct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFf-uN-LEq">
+                                <rect key="frame" x="20" y="583" width="203" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.84313725490196079" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tilt Down = Pass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUG-IS-jev">
-                                <rect key="frame" x="650" y="583" width="164" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe Right = Pass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUG-IS-jev">
+                                <rect key="frame" x="610" y="583" width="204" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.84313725490196079" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -205,7 +205,8 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="ZXq-UR-oqc"/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="u78-Ae-sLr" appends="YES" id="JNk-Di-vCg"/>
+                            <outletCollection property="gestureRecognizers" destination="ZG9-4R-ny0" appends="YES" id="CN5-vA-6mu"/>
+                            <outletCollection property="gestureRecognizers" destination="w8z-yq-al4" appends="YES" id="qXC-QO-lcz"/>
                         </connections>
                     </view>
                     <toolbarItems/>
@@ -213,7 +214,8 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pv-iu-aCx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <gestureRecognizer id="u78-Ae-sLr"/>
+                <swipeGestureRecognizer direction="right" id="ZG9-4R-ny0"/>
+                <swipeGestureRecognizer direction="left" id="w8z-yq-al4"/>
             </objects>
             <point key="canvasLocation" x="-642.4460431654677" y="445.7286432160804"/>
         </scene>
