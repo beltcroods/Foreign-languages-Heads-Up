@@ -20,8 +20,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+        tap.numberOfTapsRequired = 2
+        view.addGestureRecognizer(tap)
         
-        
+        let cardset1 = ["soundtrack": "une bande originale"]
+    }
+    
+    @objc func doubleTapped(){
+        let alert = UIAlertController(title: "Cardset #1", message: "\(cardset1[ "soundtrack"])", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 
     @IBAction func SubmitLogin(_ sender: Any) {
@@ -29,8 +38,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Cardset1Button(_ sender: Any) {
-        let cardset1 = ["soundtrack": "une bande originale"]
-        let CurrentCardNumber = Int.random(in: 1...15)
+        
+        let CurrentCardNumber = Int.random(in: 1...1)
         if CurrentCardNumber == 1 {
             TESTUILabel.text = cardset1["soundtrack"]
         }
