@@ -16,6 +16,7 @@ class ViewController3: UIViewController {
     @IBOutlet weak var PassedLabel: UILabel!
     @IBOutlet weak var CorrectLabel: UILabel!
     @IBOutlet weak var NumberCorrectLabel: UILabel!
+    @IBOutlet weak var TimerLabel: UILabel!
     override func viewDidLoad() {
         
         
@@ -37,6 +38,18 @@ class ViewController3: UIViewController {
         var cnumber = String(CorrectNumber)
         NumberCorrectLabel.text = cnumber
         
+    }
+    
+    let timerleft = 60
+    @objc func TimerCountDown()
+    {
+        timerleft -= 1
+        TimerLabel.text = "\(timeleft)"
+        
+        if timeleft <= 0 {
+            timer?.invalidate ()
+            timer = nil
+        }
     }
     
 }
