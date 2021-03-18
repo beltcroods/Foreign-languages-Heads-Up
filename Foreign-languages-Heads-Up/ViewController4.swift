@@ -13,8 +13,8 @@ class ViewController4: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let otherLanguageCorrectArray = [""]
-        let englishCorrectArray = [""]
+        let otherLanguageCorrectArray = ["Yes"]
+        let englishCorrectArray = [String]()
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return otherLanguageCorrectArray.count
@@ -23,7 +23,7 @@ class ViewController4: UIViewController, UITableViewDelegate {
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellOtherCorrect", for: indexPath)
 
-        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
+            cell.textLabel?.text = otherLanguageCorrectArray[indexPath.item]
 
         return cell
         }
