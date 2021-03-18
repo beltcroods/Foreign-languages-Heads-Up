@@ -235,20 +235,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBoard4" translatesAutoresizingMaskIntoConstraints="NO" id="4Os-UW-dfy">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List of Cards You Got Correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSu-hM-tyQ">
+                                <rect key="frame" x="98" y="75" width="638" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyz-Q5-lru">
-                                <rect key="frame" x="224" y="737" width="424" height="387"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.84313725490000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbu-ae-631">
+                                <rect key="frame" x="544" y="167" width="161" height="63"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.84313725490000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmY-m8-n2p">
+                                <rect key="frame" x="132" y="167" width="126" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="9JW-GM-cTD" kind="show" id="Et7-d1-xhO"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.84313725490000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gEf-SO-jU0">
+                                <rect key="frame" x="20" y="278" width="383" height="790"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.98039215690000003" green="0.84313725490000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TKY-W5-VRb">
+                                        <rect key="frame" x="0.0" y="28" width="383" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TKY-W5-VRb" id="oL6-ko-MC1">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Nn-Q3-IyH">
+                                <rect key="frame" x="411" y="278" width="403" height="790"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.98039215690000003" green="0.84313725490000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ofN-xE-yzJ">
+                                        <rect key="frame" x="0.0" y="28" width="403" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ofN-xE-yzJ" id="U0B-UB-63p">
+                                            <rect key="frame" x="0.0" y="0.0" width="403" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.82352941176470584" green="0.74509803921568629" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Ux-eU-ZuO" firstAttribute="trailing" secondItem="gEf-SO-jU0" secondAttribute="trailing" constant="71" id="3Ye-nI-9tG"/>
+                            <constraint firstItem="gEf-SO-jU0" firstAttribute="leading" secondItem="0Ux-eU-ZuO" secondAttribute="leading" constant="72" id="929-zU-YFk"/>
+                            <constraint firstItem="gEf-SO-jU0" firstAttribute="top" secondItem="dbu-ae-631" secondAttribute="bottom" constant="66" id="H7Q-q1-Vrc"/>
+                            <constraint firstItem="0Ux-eU-ZuO" firstAttribute="bottom" secondItem="gEf-SO-jU0" secondAttribute="bottom" constant="38" id="tjC-1S-Vje"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Ux-eU-ZuO"/>
                     </view>
                     <navigationItem key="navigationItem" id="6zY-mx-bMD"/>
@@ -331,7 +379,7 @@
             <objects>
                 <viewController id="CR3-us-qJb" customClass="UIViewcontroller6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kPE-Dq-DE8">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StoryBoard5" translatesAutoresizingMaskIntoConstraints="NO" id="GSc-hJ-5i8">
@@ -451,7 +499,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="StoryBoard4" width="657" height="878"/>
         <image name="StoryBoard5" width="662" height="889"/>
     </resources>
     <inferredMetricsTieBreakers>
