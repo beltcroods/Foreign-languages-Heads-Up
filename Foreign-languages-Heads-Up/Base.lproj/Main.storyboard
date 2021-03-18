@@ -214,8 +214,16 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pv-iu-aCx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="ZG9-4R-ny0"/>
-                <swipeGestureRecognizer direction="left" id="w8z-yq-al4"/>
+                <swipeGestureRecognizer direction="right" id="ZG9-4R-ny0">
+                    <connections>
+                        <action selector="SwipeRight:" destination="6KV-k8-H0K" id="BOF-lT-9Fs"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="w8z-yq-al4">
+                    <connections>
+                        <action selector="SwipeLeft:" destination="6KV-k8-H0K" id="Nkd-Wd-mIb"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-642.4460431654677" y="445.7286432160804"/>
         </scene>
