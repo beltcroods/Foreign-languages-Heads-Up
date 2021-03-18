@@ -8,15 +8,32 @@
 
 import UIKit
 
-class ViewController5: UIViewController {
-
+class ViewController5: UIViewController, UITableViewDelegate {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            <#code#>
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            <#code#>
+        }
     }
     
 
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    
     /*
     // MARK: - Navigation
 
@@ -27,4 +44,4 @@ class ViewController5: UIViewController {
     }
     */
 
-}
+
