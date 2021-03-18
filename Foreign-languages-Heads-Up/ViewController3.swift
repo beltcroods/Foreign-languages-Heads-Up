@@ -18,7 +18,25 @@ class ViewController3: UIViewController {
     @IBOutlet weak var NumberCorrectLabel: UILabel!
     override func viewDidLoad() {
         
+        
+        
         super.viewDidLoad()
         
+        
+        
 }
+    @IBAction func SwipeRight(_ sender: Any) {
+        var PassedNumber = Int(NumberPassedLabel.text!)!
+        PassedNumber += 1
+        var Pnumber = String(PassedNumber)
+        NumberPassedLabel.text = Pnumber
     }
+    @IBAction func SwipeLeft(_ sender: Any) {
+        var CorrectNumber = Int(NumberCorrectLabel.text!)!
+        CorrectNumber += 1
+        var cnumber = String(CorrectNumber)
+        NumberCorrectLabel.text = cnumber
+        
+    }
+    
+}
