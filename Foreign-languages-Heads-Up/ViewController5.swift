@@ -8,10 +8,9 @@
 
 import UIKit
 
-class ViewController5: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController5: UIViewController, UITableViewDelegate {
     
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
