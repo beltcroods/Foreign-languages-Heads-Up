@@ -40,16 +40,16 @@ class ViewController3: UIViewController {
         
     }
     
-    let timerleft = 60
-    @objc func TimerCountDown()
-    {
-        timerleft -= 1
-        TimerLabel.text = "\(timeleft)"
-        
-        if timeleft <= 0 {
-            timer?.invalidate ()
-            timer = nil
-        }
-    }
+//    let timerleft = 60
+//    @objc func TimerCountDown()
+//    {
+//        timerleft -= 1
+//        TimerLabel.text = "\(timeleft)"
+//
+//        if timeleft <= 0 {
+//            timer?.invalidate ()
+//            timer = nil
+//        }
+//    }
     
 }
